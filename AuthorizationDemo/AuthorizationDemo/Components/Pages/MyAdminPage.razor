@@ -1,0 +1,12 @@
+﻿@page "/myadminpage"
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "Admin")]
+
+<h3>MyAdminPage</h3>
+
+<h1>This page is only accessible by admins!</h1>
+
+@code {
+
+}

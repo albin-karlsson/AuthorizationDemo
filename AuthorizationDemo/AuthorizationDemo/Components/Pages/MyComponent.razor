@@ -1,0 +1,17 @@
+﻿@page "/mycomponent"
+
+<h1>EVERYONE CAN SEE THIS</h1>
+
+<AuthorizeView>
+    <h1>YOU ARE LOGGED IN</h1>
+</AuthorizeView>
+
+<AuthorizeView Roles="Admin">
+    <h1>YOU ARE LOGGED IN AS AN ADMIN</h1>
+</AuthorizeView>
+
+<h3>MyComponent</h3>
+
+@code {
+
+}
